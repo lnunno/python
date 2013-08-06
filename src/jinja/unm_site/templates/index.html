@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "macros.html" import label %}
+{% block title %}Lucas' Homepage{% endblock %}
+{% block content %}
+<div class="hero-unit">
+            <h1>Lucas Nunno
+            </h1>
+            <h4>lnunno@cs.unm.edu</h4>
+            <h4>lnunno@unm.edu</h4>
+            <p>
+                Graduate student at the University of New Mexico. Please contact me via the email addresses above if you'd like to take a look at my CV.
+            </p>
+            <p>
+                <a href="aboutme.html" class="btn btn-primary btn-large">More About Me
+                </a>
+            </p>
+        </div>
+{% endblock %}
+{% block footer %}
+	{% for social in social_media_buttons %}
+		      <a class="btn btn-small btn-primary" href="{{ social.href }}">{{ social.caption }}</a>
+    {% endfor %}
+{% endblock %}
