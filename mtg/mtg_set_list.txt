@@ -1,0 +1,77 @@
+ [EXPANSIONS]
+ Dragon's Maze
+ Gatecrash
+ Return to Ravnica
+ Avacyn Restored
+ Dark Ascension
+ Innistrad
+ New Phyrexia
+ Mirrodin Besieged
+ Scars of Mirrodin
+ Rise of the Eldrazi
+ Worldwake
+ Zendikar
+ Alara Reborn
+ Conflux
+ Shards of Alara
+ Eventide
+ Shadowmoor
+ Morningtide
+ Lorwyn
+ Future Sight
+ Planar Chaos
+ Timeshifted
+ Time Spiral
+ Coldsnap
+ Dissension
+ Guildpact
+ Ravnica
+ Saviors of Kamigawa
+ Betrayers of Kamigawa
+ Champions of Kamigawa
+ Fifth Dawn
+ Darksteel
+ Mirrodin
+ Scourge
+ Legions
+ Onslaught
+ Judgment
+ Torment
+ Odyssey
+ Apocalypse
+ Planeshift
+ Invasion
+ Prophecy
+ Nemesis
+ Mercadian Masques
+ Urza's Destiny
+ Urza's Legacy
+ Urza's Saga
+ Exodus
+ Stronghold
+ Tempest
+ Weatherlight
+ Visions
+ Mirage
+ Alliances
+ Homelands
+ Ice Age
+ Fallen Empires
+ The Dark
+ Legends
+ Antiquities
+ Arabian Nights
+ [CORE SETS]
+ Magic 2013
+ Magic 2012
+ Magic 2011
+ Magic 2010
+ Tenth Edition
+ Ninth Edition
+ Eighth Edition
+ Seventh Edition
+ Sixth Edition
+ Fifth Edition
+ Fourth Edition
+ Revised Edition
+ Unlimited Edition
