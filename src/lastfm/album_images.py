@@ -8,6 +8,22 @@ from bs4 import BeautifulSoup
 import os
 import subprocess
 
+class UrlBuilder:
+    def __init__(self,domain,path,params=None):
+        if not params:
+            params = {}
+        self.domain = domain
+        self.path = path
+        self.params = params
+
+    def __str__(self):
+        acc = 'http://' + self.domain + '/' + self.path + '?'
+        acc += '&'.join(['%s=%s'  % (k,v) for k,v in self.params.iteritems() ])
+        return acc
+
+    def build(self):
+        return self.__str__()
+
 def quicksoup(url):
     html = ul.urlopen(url).read()
     return BeautifulSoup(html)
