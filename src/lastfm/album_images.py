@@ -43,19 +43,29 @@ def artist_image_urls(api_key, artist,image_size='extralarge'):
     links = image_links(image_size, soup)
     return links
 
-def convert_img_dir(directory, outext,outdir=''):
+def convert_img_dir(directory, inexts, outext,outdir=''):
     if not outdir:
         outdir = directory
     if not os.path.exists(outdir):
         raise Exception('Output path %s does not exist.' % outdir)
     for f in os.listdir(directory):
         filename, ext = os.path.splitext(f)
-        if ext == '.png' or ext == '.jpg':
+        if ext in inexts:
             filepath = os.path.join(directory, f)
             outpath = os.path.join(outdir, filename + outext)
             command = ['convert', filepath, outpath] 
             subprocess.call(command)
             print 'Converted %s to %s' % (filepath,outpath)
+            
+def matlab_include_graphics(directory, inexts,scale=0.5):
+    for f in os.listdir(directory):
+        _, ext = os.path.splitext(f)
+        if ext in inexts:
+            filepath = os.path.join(directory, f)
+            scaleStr = ''
+            if scale:
+                scaleStr = '[scale=%.1f]' % scale
+            print r'\includegraphics%s{%s}' % (scaleStr,filepath) 
         
 def save_url(url, outpath):
     if os.path.split(outpath)[1] == '':
