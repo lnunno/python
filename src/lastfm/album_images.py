@@ -57,7 +57,7 @@ def convert_img_dir(directory, inexts, outext,outdir=''):
             subprocess.call(command)
             print 'Converted %s to %s' % (filepath,outpath)
             
-def matlab_include_graphics(directory, inexts,scale=0.5):
+def latex_include_graphics(directory, inexts,scale=0.5):
     for f in os.listdir(directory):
         filename, ext = os.path.splitext(f)
         if ext in inexts:
