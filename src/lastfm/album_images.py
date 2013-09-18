@@ -58,7 +58,7 @@ def convert_img_dir(directory, inexts, outext,outdir=''):
             print 'Converted %s to %s' % (filepath,outpath)
             
 def latex_include_graphics(directory, inexts,scale=0.5):
-    for f in os.listdir(directory):
+    for f in sorted(os.listdir(directory)):
         filename, ext = os.path.splitext(f)
         if ext in inexts:
             filepath = os.path.join(directory, f)
