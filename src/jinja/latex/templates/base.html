@@ -14,6 +14,10 @@
     \section{ {{ section }} }
     {% endfor %}
     
+    {% for f in include_list %}
+    \include{ {{- f -}} }
+    {% endfor %}
+    
     {% for figure in figure_list %}
 	\begin{figure}[p]
 	\centering
