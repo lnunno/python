@@ -1,0 +1,15 @@
+\documentclass{article}
+{% for package in package_list %}
+\usepackage{ {{ package }} }
+{% endfor %}
+\begin{document}
+    \title{ {{ title }} }
+    \date{\today}
+    \author{ {{ author }} \\
+      \texttt{ {{ email }} }
+    }
+    \maketitle
+    {% for section in section_list %}
+    \section{ {{ section }} }
+    {% endfor %}
+\end{document} 
