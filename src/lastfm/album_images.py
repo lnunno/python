@@ -57,23 +57,6 @@ def convert_img_dir(directory, inexts, outext,outdir=''):
             subprocess.call(command)
             print 'Converted %s to %s' % (filepath,outpath)
             
-def latex_include_graphics(directory, inexts,scale=0.5):
-    for f in sorted(os.listdir(directory)):
-        filename, ext = os.path.splitext(f)
-        if ext in inexts:
-            filepath = os.path.join(directory, f)
-            scaleStr = ''
-            if scale:
-                scaleStr = '[scale=%.1f]' % scale
-            
-            print r'''
-\begin{figure}[p]
-\centering
-\includegraphics%s{%s}
-\caption{%s}
-\end{figure}
-''' % (scaleStr,filepath,filename) 
-        
 def save_url(url, outpath):
     if os.path.split(outpath)[1] == '':
         outpath = os.path.join(outpath, os.path.split(url)[1])
