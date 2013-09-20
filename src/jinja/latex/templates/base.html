@@ -18,10 +18,10 @@
     \include{ {{- f -}} }
     {% endfor %}
     
-    {% for figure in figure_list %}
+    {% for figure in figure_list -%}
 	\begin{figure}[p]
 	\centering
-		{% for graphic in figure.graphics %}
+		{% for graphic in figure.graphics -%}
 		\includegraphics[scale={{graphic.scale}}]{ {{- graphic.path -}} }
 		\caption{ {{- graphic.caption -}} }
 		{% endfor %}

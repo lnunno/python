@@ -8,3 +8,4 @@ def render_and_save(template,variables,outfile):
     '''
     with open(outfile,'w') as f:
         f.write(template.render(variables))
+    print 'Rendered %s to %s' % (template,outfile)

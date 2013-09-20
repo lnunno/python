@@ -19,5 +19,5 @@ if __name__ == '__main__':
 #     main()
 #     convert_img_dir('output/', ['.png','.jpg'], '.ppm','output/ppms')
     #print artist_image_urls('423f4d46b119a24a89e91a7d6f945f9a', 'Cake')
-    indir = '/home/lnunno/Dropbox/UNM/Fall13/CS522_Digital_Image_Processing/hw/hw1/images'
-    #convert_img_dir(indir, ['.pgm','.ppm'], '.png', indir)
+    indir = '/home/lnunno/Dropbox/UNM/Fall13/CS522_Digital_Image_Processing/hw/hw2/images'
+    convert_img_dir(indir, ['.pgm','.ppm'], '.png', indir)
